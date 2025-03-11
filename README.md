@@ -2,7 +2,9 @@
 
 ## 📌 Project Overview  
 
-This project provides a **comprehensive visualization framework** for proprietary trading indicators, designed to enhance decision-making in financial markets. The raw market data is sourced from **Binance API** (a separate repository will be available on the author's GitHub for data fetching).  
+This project provides a **comprehensive visualization framework** for proprietary trading indicators, designed to enhance decision-making in financial markets. 
+The raw market data is sourced from Binance API, with data fetching handled by a dedicated infrastructure project:
+https://github.com/ilgiz-almv/binance_utils
 
 Since the indicator calculations rely on **proprietary algorithms**, they are **not included** in this repository. Instead, a **precomputed dataset (CSV format)** is used to demonstrate the visualization capabilities.  
 
@@ -10,7 +12,7 @@ The primary objective of this project is to **consolidate multiple trading indic
 
 ## 🔧 Workflow  
 1. **Fetching Data**:  
-   - Original trading data is collected via Binance API (handled in a separate project).  
+   - Original trading data is collected via Binance API using the project: https://github.com/ilgiz-almv/binance_utils  
    - Data includes timestamp, price, volume, market delta and other parameters.  
 2. **Indicator Calculation (Proprietary Logic - Not Included)**:  
    - The fetched data is processed with custom-built functions to compute trading indicators.  
